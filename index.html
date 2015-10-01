@@ -1,35 +1,522 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>grezvany13.github.io</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom Fonts -->
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-	<head>
-	<body>
-        <!-- Header -->
-        <header id="top" class="header">
-            <div class="text-vertical-center">
-                <h1>grezvany13.github.io</h1>
-                <h3>Still under development, more to come soon!</h3>
-            </div>
-        </header>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!--Import materialize.css-->
+        <link type="text/css" href="assets/css/materialize.min.css" rel="stylesheet" media="all">
+        <!--Import style.css-->
+        <link type="text/css" href="assets/css/style.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+        <header class="navbar-fixed">
+            <nav class="top-nav">
+                <div class="container">
+                    <a class="page-title"><i class="mdi-file-folder-shared"></i> Curriculum vitae</a>
+                </div><!-- .container -->
+            </nav><!-- nav.top-nav -->
+            <div class="container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
+            </div><!-- .container -->
+
+            <ul id="nav-mobile" class="side-nav fixed" style="width: 240px;">
+                <li class="logo z-depth-1">
+                    <a id="logo-container" href="#" class="brand-logo">
+                        <img src="assets/img/photo.jpg" alt="" class="circle responsive-img z-depth-1"> <!-- notice the "circle" class -->
+                    </a>
+                </li><!-- .logo -->
+                <li class="bold"><a href="#personalia" class="waves-effect">Personalia</a></li>
+                <li class="bold"><a href="#experience" class="waves-effect">Work Experience</a></li>
+                <li class="bold"><a href="#education" class="waves-effect">Education</a></li>
+                <li class="bold"><a href="#skills" class="waves-effect">Skills</a></li>
+                <li class="bold"><a href="#languages" class="waves-effect">Lanugages</a></li>
+                <li class="bold"><a href="#portfolio" class="waves-effect">Portfolio</a></li>
+            </ul><!-- #nav-mobile -->
+        </header><!-- header -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div id="personalia" class="section">
+                            <p class="caption">As a starting PHP programmer I taught myself the basics of PHP and MySQL. I also gained more knowledge about XHTML, CSS and Javascript which not only made it possible to build small websites and HTML mails but also building and maintaining advanced CMS systems and web applications.<br>
+                            More than 15 years later after starting with (serious) programming, and almost 10 years of working experience, I'm capable of working on any product or project which is web-based.</p>
+                            <a name="personalia"></a>
+                            <h3 class="header"><i class="mdi-social-person"></i> Personalia</h3>
+                            <div class="row">
+                                <div class="col s12 m12 l6">
+                                    <dl>
+                                        <dt class="col s5">Name</dt>
+                                        <dd class="col s7">Johan Jitse de Jong</dd>
+                                        <dt class="col s5">Address</dt>
+                                        <dd class="col s7">Hofgeest 46<br>1102 EB  Amsterdam<br>The Netherlands</dd>
+                                        <dt class="col s5">Phone Number</dt>
+                                        <dd class="col s7"><a href="tel:+31612345678">+31 (0)6 123 456 78</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <dl>
+                                        <dt class="col s5">Day of Birth</dt>
+                                        <dd class="col s7">March 10, 1986</dd>
+                                        <dt class="col s5">Nationality</dt>
+                                        <dd class="col s7">Dutch</dd>
+                                        <dt class="col s5">E-mail Address</dt>
+                                        <dd class="col s7"><a href="mailto:johan@notitia.nl">johan@notitia.nl</a></dd>
+                                        <dt class="col s5">Website</dt>
+                                        <dd class="col s7"><a href="https://grezvany13.github.io">grezvany13.github.io</a></dd>
+
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="assets/img/background/tree.jpg"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div id="experience" class="section">
+                            <a name="experience"></a>
+                            <h3 class="header"><i class="mdi-communication-business"></i> Experience</h3>
+
+                            <div class="row">
+                                <div class="col s12 m6 l6">
+                                    <h4>Netwerven</h4>
+                                    <p><strong>Amsterdam, The Netherlands</strong></p>
+                                    <span>July 2013 – Present</span>
+                                </div>
+                                <div class="col s12 m6 l6">
+                                    <h5>Lead Web Developer</h5>
+                                    <p>Website: <a href="http://www.netwerven.nl/">www.netwerven.nl</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m6 l6">
+                                    <h4>Wonders Interactive</h4>
+                                    <p><strong>Kortenhoef, The Netherlands</strong></p>
+                                    <span>November 2007 – July 2013</span>
+                                </div>
+                                <div class="col s12 m6 l6">
+                                    <h5>Fullstack Web Developer</h5>
+                                    <p>Front- and Backend developer on custom tailored websites and systems.</p>
+                                    <p>Website: <a href="http://www.wonders.nl/">www.wonders.nl</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m6 l6">
+                                    <h4>E-Mark</h4>
+                                    <p><strong>Haarlem, The Netherlands</strong></p>
+                                    <span>September 2006 – August 2007</span>
+                                </div>
+                                <div class="col s12 m6 l6">
+                                    <h5>Junior Web Developer</h5>
+                                    <p>Backend developer and creating HTML e-mail templates for a wide range of customers</p>
+                                    <p>Website: <a href="http://www.e-mark.nl/">www.e-mark.nl</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m6 l6">
+                                    <h4>Deen Supermarkten</h4>
+                                    <p><strong>Castricum, The Netherlands</strong></p>
+                                    <span>June 2000 – September 2006</span>
+                                </div>
+                                <div class="col s12 m6 l6">
+                                    <h5>Carry-out</h5>
+                                    <p>I worked at the local supermarket as a Carry-out, which include doing everything that other employees wouldn't or couldn't do due there own work.</p>
+                                    <p>It's a nasty job, but fun.</p>
+                                    <p>Website: <a href="http://www.deen.nl/">www.deen.nl</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="assets/img/background/cows.jpg"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div id="education" class="section">
+                            <a name="education"></a>
+                            <h3 class="header"><i class="mdi-social-school"></i> Education</h3>
+                            <div class="row">
+                                <div class="col s12 m6 l6">
+                                    <h4>Nova College</h4>
+                                    <p><strong>Haarlem, The Netherlands</strong></p>
+                                    <span>2005 – 2007</span>
+                                </div>
+                                <div class="col s12 m6 l6">
+                                    <h5>MBO, IT Manager</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m6 l6">
+                                    <h4>Groenhorst College</h4>
+                                    <p><strong>Barneveld, The Netherlands</strong></p>
+                                    <span>1998 – 2004</span>
+                                </div>
+                                <div class="col s12 m6 l6">
+                                    <h5>Veterinary Assistant</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 m6 l6">
+                                    <h4>Bonhoeffer College</h4>
+                                    <p><strong>Castricum, The Netherlands</strong></p>
+                                    <span>1994 – 1998</span>
+                                </div>
+                                <div class="col s12 m6 l6">
+                                    <h5>MAVO D</h5>
+                                    <ul>
+                                        <li>Dutch</li>
+                                        <li>English</li>
+                                        <li>Mathematics</li>
+                                        <li>Physics</li>
+                                        <li>Chemistry</li>
+                                        <li>Biology</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="assets/img/background/model.jpg"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div id="skills" class="section">
+                            <a name="skills"></a>
+                            <h3 class="header"><i class="mdi-action-stars"></i> Skills</h3>
+
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="header">PHP</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 90%"></div>
+                                    </div>
+                                    <em>OOP PHP5, Yii2, WordPres, Drupal, Joomla, Magento</em>
+                                </div>
+                                <div class="col s12 m6">
+                                    <span class="header">MySQL</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="header">HTML / CSS</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 90%"></div>
+                                    </div>
+                                    <em>LESS, Sass</em>
+                                </div>
+                                <div class="col s12 m6">
+                                    <span class="header">Javascript</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 80%"></div>
+                                    </div>
+                                    <em>Vanilla, jQuery, Zope</em>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="header">ElasticSearch</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <span class="header">LAMP stack</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 80%"></div>
+                                    </div>
+                                    <em>Also MAMP and WAMP</em>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="header">Google Analytics</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <span class="header">SEO</span>
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="assets/img/background/eye.jpg"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div id="languages" class="section">
+                            <a name="languages"></a>
+                            <h3 class="header"><i class="mdi-action-language"></i> Languages</h3>
+
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="header">Dutch</span>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 100%"></div>
+                                    </div>
+                                    Native Proficiency
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="header">English</span>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 80%"></div>
+                                    </div>
+                                      Full Professional Proficiency
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="header">German</span>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 20%"></div>
+                                    </div>
+                                    Elementary Proficiency
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="assets/img/background/code.jpg"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div id="portfolio" class="section">
+                            <a name="portfolio"></a>
+                            <h3 class="header"><i class="mdi-image-collections"></i> Portfolio</h3>
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/booking.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Booking.com</span>
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">www.workingatbooking.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/bolcom.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">Bol.com</span>
+
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">banen.bol.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/dll.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">De Lage Landen</span>
+
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">werkenbijdll.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/eneco.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">Eneco</span>
+
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">werkenbijeneco.nl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/ns.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">Nederlandse Spoorwegen</span>
+
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">werkenbijns.nl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/postnl.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">PostNL</span>
+
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">jobs.post.nl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/tommyhilfiger.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">Tommy Hilfiger</span>
+
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <a href="#">www.hetzandgezond.nl</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 m6">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/img/portfolio/gezondheidscentrumutrecht.png" class="responsive-img materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title grey-text text-darken-4">Gezondheidscentrum Utrecht</span>
+
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                        <div class="card-action">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </main><!-- main -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 s12">
+                        <h5 class="white-text">Contact me</h5>
+                        <p class="grey-text text-lighten-4">If you would like to contact me, either for a job offer or just a cup of coffe, you can use the contact details described at my <a href="#personalia">personalia</a>.</p>
+                        <p class="grey-text text-lighten-4">However, I do no not answer to recruitment and job agencies, and only to (non-)recruiters from the hiring company themselves.</p>
+                    </div><!-- .col.l4.s12 -->
+                    <div class="col l4 s12">
+                        <h5 class="white-text">Also Intersting</h5>
+                        <p class="grey-text text-lighten-4">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/jjdejong">LinkedIn</a></li>
+                                <li><a href="https://github.com/grezvany13">GitHub</a></li>
+                                <li><a href="http://codepen.io/Grezvany13">CodePen</a></li>
+                            </ul>
+                        </p>
+                    </div><!-- .col.l4.s12 -->
+                    <div class="col l4 s12" style="overflow: hidden;">
+                        <h5 class="white-text">This CV</h5>
+                        <p class="grey-text text-lighten-4">This online CV is build with the following:
+                            <ul>
+                                <li><a href="http://materializecss.com/">Materialize</a></li>
+                                <li><a href="https://jquery.com/">jQuery</a></li>
+                            </ul>
+                        </p>
+                        <p class="grey-text text-lighten-4">The photos on this site are made by myself.</p>
+                    </div><!-- .col.l4.s12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+            <div class="footer-copyright">
+                <div class="container">
+                    &copy; 2015 Johan de Jong, All rights reserved.
+                    <a class="grey-text text-lighten-4 right" href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>
+                </div><!-- .container -->
+            </div><!-- .footer-copyright -->
+        </footer><!-- footer -->
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.localScroll.min.js"></script>
+        <script>
+$(function() {
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.button-collapse').sideNav();
+
+    $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        $(window).stop(true).scrollTo(this.hash, {
+            'duration': 1000,
+            'interrupt': true,
+            'offset': -(parseInt($('header').height()) + (parseInt($('.section').css('padding-top')) * 3 ))
+        });
+    });
+});
+        </script>
     </body>
 </html>
