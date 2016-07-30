@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?DOCTYPE squad SYSTEM "squad.dtd"?>
+<?xml-stylesheet href="squad.xsl" type="text/xsl"?>
+<squad nick="PJ">
+	<name>Parareasue</name>
+	<email></email>
+	<web></web>
+	<picture>logo.paa</picture>
+	<title>These Things We Do, That Others May Live</title>
+
+    <member id="76561198010039265" nick="Grezvany13">
+		<name>Johan de Jong</name>
+		<email>johan@notitia.nl</email>
+		<icq></icq>
+		<remark>It is my duty as a Pararescueman to save life and to aid the injured. I will be prepared at all times to perform my assigned duties quickly and efficiently, placing these duties before personal desires and comforts. These things we (I) do, that others may live</remark>
+    </member>
+</squad>
