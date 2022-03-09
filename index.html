@@ -4,17 +4,62 @@
     x-init="$watch('darkMode', val => localStorage.setItem('dark', val))" x-bind:class="{ 'dark': darkMode }">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-58VZNF2');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johan de Jong - Portfolio</title>
-    <meta content="My personal Portfolio and online Resume" name="description">
+    <meta name="description" content="My personal Portfolio and online Resume">
+    <meta name="robots" content="all, noimageindex">
+    <meta name="google" content="nositelinkssearchbox" />
     <link href="dist/main.css" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://grezvany13.github.io/",
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Johan de Jong",
+            "jobTitle": "Full-Stack Developer",
+            "birthDate": "1986-03-10",
+            "gender": "Male",
+            "nationality": "Dutch":
+            "url": "https://grezvany13.github.io/",
+            "sameAs": [
+                "https://www.linkedin.com/in/jjdejong",
+                "https://www.xing.com/profile/Johan_deJong6",
+                "https://codepen.io/Grezvany13/"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Alkmaar",
+                "addressCountry": "Netherlands"
+            },
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Jacht.digital,
+                    "legalName" : "Jacht.digital Marketing",
+                    "url": "https://jacht.digital"
+                }
+            ],
+        }
+    </script>
     <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
     x-data="{showAbout: false, showExperience: false, showEducation: false, showSkills: false, showLanguages: false, showPortfolio: false}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58VZNF2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <a name="top"></a>
 
     <header class="font-body sticky top-0 z-50 bg-neutral-50 dark:bg-neutral-900">
@@ -142,7 +187,7 @@
                     <a class="px-4 py-2 mt-2" href="#languages" :class="showLanguages ? 'active' : ''">Languages</a>
                     <a class="px-4 py-2 mt-2" href="#portfolio" :class="showPortfolio ? 'active' : ''">Portfolio</a>
                     <span class="px-4 py-2 mt-2 flex flex-grow items-end">
-                        <button type="button" @click="darkMode = !darkMode">
+                        <button type="button" @click="darkMode = !darkMode" aria-label="Switch Dark Mode">
                             <svg class="dark w-5 h-5 fill-white" x-show="darkMode" role="img" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" aria-labelledby="color-scheme-dark">
                                 <path
@@ -170,9 +215,9 @@
             </div>
             <div
                 class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="font-title text-4xl md:text-5xl lg:text-6xl mb-4 font-medium text-radiant">A good programmer
+                <span class="font-title text-4xl md:text-5xl lg:text-6xl mb-4 font-medium text-radiant">A good programmer
                     is a lazy programmer
-                </h1>
+                </span>
             </div>
         </div>
     </section>
@@ -181,8 +226,8 @@
         x-intersect:leave.half="showAbout = false">
         <div class="container px-12 md:px-24 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
-                <h2 class="text-xs tracking-widest font-medium font-title mb-1">something about me</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium font-title mb-4 text-radiant">Full-Stack Developer</h1>
+                <span class="text-xs tracking-widest font-medium font-title mb-1">something about me</span>
+                <h1 class="sm:text-3xl text-2xl font-medium font-title mb-4 text-radiant">Johan de Jong</h1>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">With programming as a hobby it only makes sense to
                     make a job out of it. Having my first computer at age 6 (for playing games of course) I learned my
                     way around both the hardware and software side.
@@ -200,9 +245,8 @@
         x-intersect:leave.half="showExperience = false">
         <div class="container px-12 md:px-24 py-24 mx-auto">
             <div class="text-center mb-20">
-                <h2 class="text-xs tracking-widest font-medium font-title mb-1">some stuff I've done</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Work Experience
-                </h1>
+                <span class="text-xs tracking-widest font-medium font-title mb-1">some stuff I've done</span>
+                <h2 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Work Experience</h2>
             </div>
             <div class="-my-8">
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
@@ -212,7 +256,7 @@
                         <span class="mt-1 text-gray-500 text-sm">April 2021 - current</span>
                     </div>
                     <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium font-title mb-2">Lead Full-Stack Developer</h2>
+                        <h3 class="text-2xl font-medium font-title mb-2">Lead Full-Stack Developer</h3>
                         <p class="leading-relaxed">Lead Developer building and maintaining client websites in WordPress.
                             Building custom plugins and API integrations, and working from a SEO perspective.</p>
                         <a class="inline-flex items-center mt-4 text-sky-900 dark:text-sky-300"
@@ -232,7 +276,7 @@
                         <span class="mt-1 text-gray-500 text-sm">March 2016 – March 2018</span>
                     </div>
                     <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium font-title mb-2">Full-Stack Developer</h2>
+                        <h3 class="text-2xl font-medium font-title mb-2">Full-Stack Developer</h3>
                         <p class="leading-relaxed">Web Developer for maintaining website and working on new website.</p>
                         <p class="leading-relaxed"></p>Backend Developer for new API written in Laravel Lumen, which
                         handles order management between different external API's.</p>
@@ -253,7 +297,7 @@
                         <span class="mt-1 text-gray-500 text-sm">July 2013 – December 2015</span>
                     </div>
                     <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium font-title mb-2">Lead Web Developer</h2>
+                        <h3 class="text-2xl font-medium font-title mb-2">Lead Web Developer</h3>
                         <p class="leading-relaxed">Primarily PHP Backend Developer, but also internal support (both
                             front- and backend). Team lead for the Support team, and technical support for Sales and
                             Project Management towards clients.</p>
@@ -277,7 +321,7 @@
                         <span class="mt-1 text-gray-500 text-sm">November 2007 – July 2013</span>
                     </div>
                     <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium font-title mb-2">Full-Stack Developer</h2>
+                        <h3 class="text-2xl font-medium font-title mb-2">Full-Stack Developer</h3>
                         <p class="leading-relaxed">Front- and Backend developer on custom tailored websites and systems.
                         </p>
                         <a class="inline-flex items-center mt-4 text-sky-900 dark:text-sky-300"
@@ -297,7 +341,7 @@
                         <span class="mt-1 text-gray-500 text-sm">September 2006 – August 2007</span>
                     </div>
                     <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium font-title mb-2">Junior Web Developer</h2>
+                        <h3 class="text-2xl font-medium font-title mb-2">Junior Web Developer</h3>
                         <p class="leading-relaxed">Backend developer and creating HTML e-mail templates for a wide range
                             of customers</p>
                         <a class="inline-flex items-center mt-4 text-sky-900 dark:text-sky-300"
@@ -318,8 +362,8 @@
         x-intersect.half="showEducation = true" x-intersect:leave.half="showEducation = false">
         <div class="container px-24 md:px-12 py-24 mx-auto">
             <div class="text-center mb-20">
-                <h2 class="text-xs tracking-widest font-medium font-title mb-1">things I've learned</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Education</h1>
+                <hspan class="text-xs tracking-widest font-medium font-title mb-1">things I've learned</span>
+                <h2 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Education</h2>
             </div>
 
             <div class="py-8 flex flex-wrap md:flex-nowrap flex-col md:flex-row">
@@ -329,7 +373,7 @@
                     <span class="mt-1 text-gray-500 text-sm">2005 – 2007</span>
                 </div>
                 <div class="md:flex-1">
-                    <h2 class="text-2xl font-medium font-title mb-2">IT Management</h2>
+                    <h3 class="text-2xl font-medium font-title mb-2">IT Management</h3>
                 </div>
             </div>
             <div class="py-8 flex flex-wrap md:flex-nowrap flex-col md:flex-row">
@@ -339,7 +383,7 @@
                     <span class="mt-1 text-gray-500 text-sm">1998 – 2004</span>
                 </div>
                 <div class="md:flex-1">
-                    <h2 class="text-2xl font-medium font-title mb-2">Veterinary Assistant</h2>
+                    <h3 class="text-2xl font-medium font-title mb-2">Veterinary Assistant</h3>
                 </div>
             </div>
             <div class="py-8 flex flex-wrap md:flex-nowrap flex-col md:flex-row">
@@ -349,7 +393,7 @@
                     <span class="mt-1 text-gray-500 text-sm">1994 – 1998</span>
                 </div>
                 <div class="md:flex-1">
-                    <h2 class="text-2xl font-medium font-title mb-2">MAVO D</h2>
+                    <h3 class="text-2xl font-medium font-title mb-2">MAVO D</h3>
                 </div>
             </div>
         </div>
@@ -359,8 +403,8 @@
         x-intersect:leave.half="showSkills = false">
         <div class="container px-12 md:px-24 py-24 mx-auto">
             <div class="text-center mb-20">
-                <h2 class="text-xs tracking-widest font-medium font-title mb-1">stuff I know</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Skills</h1>
+                <span class="text-xs tracking-widest font-medium font-title mb-1">stuff I know</span>
+                <h2 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Skills</h2>
             </div>
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
                 <!-- A -->
@@ -981,8 +1025,8 @@
         x-intersect:leave.half="showPortfolio = false">
         <div class="container px-12 md:px-24 py-24 mx-auto flex flex-wrap">
             <div class="flex flex-col text-center w-full mb-20">
-                <h2 class="text-xs tracking-widest font-medium font-title mb-1">things I worked on</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Portfolio</h1>
+                <span class="text-xs tracking-widest font-medium font-title mb-1">things I worked on</span>
+                <h2 class="sm:text-3xl text-2xl font-medium text-center font-title text-radiant mb-4">Portfolio</h2>
             </div>
             <div class="flex flex-wrap md:-m-2 -m-1" x-data="{}">
                 <div class="flex flex-wrap w-1/2">
